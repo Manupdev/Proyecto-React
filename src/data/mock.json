@@ -1,0 +1,48 @@
+{
+  "loginUsers": [
+    {
+      "mail": "profe@mail.com",
+      "name": "Profesor 1",
+      "role": "TEACHER"
+    },
+    {
+      "mail": "ana@mail.com",
+      "name": "Alumno 1",
+      "role": "STUDENT"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "position": "Backend engineer"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "position": "Frontend engineer"
+    },
+    {
+      "id": 3,
+      "name": "Pepe Argento",
+      "position": "QA Analyst"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Estudiante Jane Doe",
+      "position": "Estudiante "
+    },
+    {
+      "id": 2,
+      "name": "Estudiante John Doe",
+      "position": "Estudiante "
+    },
+    {
+      "id": 3,
+      "name": "Estudiante Pepe Doe",
+      "position": "Estudiante "
+    }
+  ]
+}
