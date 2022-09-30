@@ -1,12 +1,12 @@
 import React, {useContext, useState} from "react";
 import mock from "../../data/mock.json";
-import {UserContext} from "../../contexts/UserContext";
+import {useUserContext} from "../../contexts/UserContext";
 import {useNavigate} from "react-router-dom";
 import "./LoginPage.css";
 import { Link } from "react-router-dom"; 
 
 export default function LoginPage() {
-    const {setUser} = useContext(UserContext);
+    const {setUser,setAlumnos,setProfesores} = useUserContext();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
@@ -48,9 +48,13 @@ export default function LoginPage() {
         </div>
         <div className="d-flex justify-content-center py-1">
         <button className="w-25 btn btn-primary" onClick={() => {
-            const user = mock.loginUsers.find(user => user.mail === email)
-            if (user && user.password==password) {
-                setUser(user);
+            const _user = mock.usuarios.find(user1 => user1.mail === email)
+            const _profesores=mock.usuarios.filter(persona=>persona.role==="Profesor")
+            const _alumnos=mock.usuarios.filter(persona=>persona.role==="Alumno")
+            if (_user && _user.password==password) {
+                setUser(_user);
+                setProfesores(_profesores);
+                setAlumnos(_alumnos);
                 navigate("/home");
             } else {
                 alert("Usuario no registrado")

@@ -1,95 +1,220 @@
 {
-  "loginUsers": [
+  "usuarios": [
     {
+      "id": 1,
       "mail": "profe@mail.com",
-      "password": "123",
-      "name": "Profesor 1",
-      "role": "Profesor",
       "telefono": "1231231231",
+      "password": "123",
+      "name": "Martin Willnecker",
+      "role": "Profesor",
       "informacion": {
         "titulo": "Licenciado en turismo",
         "experiencia": "2 años como profesor"
       }
     },
+
     {
+      "id": 2,
+      "mail": "franco@mail.com",
+      "telefono": "1111111111",
+      "password": "111",
+      "name": "Franco Filippi",
+      "role": "Profesor",
+      "informacion": {
+        "titulo": "Licenciado en Geografía",
+        "experiencia": "4 años como profesor"
+      }
+    },
+
+    {
+      "id": 3,
+      "mail": "alliata@mail.com",
+      "telefono": "000000000",
+      "password": "000",
+      "name": "Francesco Alliata",
+      "role": "Profesor",
+      "informacion": {
+        "titulo": "Licenciado en Matemáticas",
+        "experiencia": "8 años como profesor"
+      }
+    },
+
+    {
+      "id": 101,
       "mail": "ana@mail.com",
-      "password": "ana",
-      "name": "Alumno 1",
-      "role": "Alumno",
       "telefono": "1231231231",
+      "password": "ana",
+      "name": "Ana Martinez",
+      "role": "Alumno",
       "informacion": {
         "dateNac": "12/02/1999",
         "estudios": "universitarios en curso"
       }
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Jane Doe",
-      "position": "Backend engineer"
     },
+
     {
-      "id": 2,
-      "name": "John Doe",
-      "position": "Frontend engineer"
+      "id": 102,
+      "mail": "maria@mail.com",
+      "telefono": "11111111",
+      "password": "111",
+      "name": "Maria Gomez",
+      "role": "Alumno",
+      "informacion": {
+        "dateNac": "7/02/1998",
+        "estudios": "universitarios en curso"
+      }
     },
+
     {
-      "id": 3,
-      "name": "Pepe Argento",
-      "position": "QA Analyst"
-    }
-  ],
-  "students": [
-    {
-      "id": 1,
-      "name": "Estudiante Jane Doe",
-      "position": "Estudiante "
-    },
-    {
-      "id": 2,
-      "name": "Estudiante John Doe",
-      "position": "Estudiante "
-    },
-    {
-      "id": 3,
-      "name": "Estudiante Pepe Doe",
-      "position": "Estudiante "
+      "id": 103,
+      "mail": "carmen@mail.com",
+      "telefono": "0000000",
+      "password": "000",
+      "name": "Carmen Bruno",
+      "role": "Alumno",
+      "informacion": {
+        "dateNac": "4/07/2000",
+        "estudios": "universitarios en curso"
+      }
     }
   ],
   "clases": [
     {
-      "idClase":1,
-      "profesor": "Profesor 1",
-      "nombreMateria": "Matematica",
-      "duracion": "30 clases",
+      "id": 1006,
+      "profesor": 2,
+      "nombreMateria": "Geografia",
+      "duracion": "20 clases",
       "frecuencia": "martes - jueves",
       "costo": 30000,
       "calificacion": 0,
       "comentarios": [
         {
-          "id": 1,
-          "alumno": "alumno 1",
-          "comentario": "lalalala",
-          "estado": "aceptado"
+          "id": 103,
+          "alumno": "Carmen Bruno",
+          "comentario": "excelente",
+          "estado": "Aceptado"
         },
         {
-          "id":2,
-          "alumno": "alumno 2",
-          "comentario": "lalalala",
+          "id": 102,
+          "alumno": "Maria Gomez",
+          "comentario": "muy bueno",
           "estado": "pendiente"
         }
       ],
       "alumnos": [
         {
-          "alumno": "alumno 1",
-          "telefono": "111111",
-          "mail": "maildelalumno@a.com",
-          "mensaje": "Mensaje",
+          "id": 103,
+          "alumno": "Carmen Bruno",
+          "telefono": "0000000",
+          "mail": "carmen@mail.com",
+          "mensaje": "...",
           "horario": "15hs",
           "estado": "pendiente"
         }
       ]
+    },
+    {
+      "id": 566,
+      "profesor": 1,
+      "nombreMateria": "Introduccion a Hoteleria",
+      "duracion": "30 clases",
+      "frecuencia": "lunes - jueves",
+      "costo": 20000,
+      "calificacion": 0,
+      "comentarios": [
+        {
+          "id": 102,
+          "alumno": "Maria Gomez",
+          "comentario": "Muy bueno",
+          "estado": "Aceptado"
+        },
+        {
+          "id": 101,
+          "alumno": "Ana Martinez",
+          "comentario": "Bueno",
+          "estado": "pendiente"
+        }
+      ],
+      "alumnos": [
+        {
+          "id": 102,
+          "alumno": "Maria Gomez",
+          "telefono": "11111111",
+          "mail": "maria@mail.com",
+          "mensaje": "...",
+          "horario": "15hs",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "id": 3124,
+      "profesor": 1,
+      "nombreMateria": "Hoteleria II",
+      "duracion": "30 clases",
+      "frecuencia": "Viernes",
+      "costo": 35000,
+      "calificacion": 0,
+      "comentarios": [
+        {
+          "id": 102,
+          "alumno": "Maria Gomez",
+          "comentario": "Podria mejorarse pero me encanta",
+          "estado": "Aceptado"
+        },
+        {
+          "id": 103,
+          "alumno": "Carmen Bruno",
+          "comentario": "Genial la cursada",
+          "estado": "Finalizada"
+        }
+      ],
+      "alumnos": [
+        {
+          "id": 102,
+          "alumno": "Maria Gomez",
+          "telefono": "11111111",
+          "mail": "maria@mail.com",
+          "mensaje": "...",
+          "horario": "15hs",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "id": 6541,
+      "profesor": 3,
+      "nombreMateria": "Matematica",
+      "duracion": "60 clases",
+      "frecuencia": "miercoles - jueves",
+      "costo": 60000,
+      "calificacion": 0,
+      "comentarios": [
+        {
+          "id": 101,
+          "alumno": "Ana Martinez",
+          "comentario": "Excelente",
+          "estado": "Aceptado"
+        },
+        {
+          "id": 103,
+          "alumno": "Carmen Bruno",
+          "comentario": "Buenisimo",
+          "estado": "pendiente"
+        }
+      ],
+      "alumnos": [
+        {
+          "id": 101,
+          "alumno": "Ana Martinez",
+          "telefono": "1231231231",
+          "mail": "ana@mail.com",
+          "mensaje": "...",
+          "horario": "15hs",
+          "estado": "Aceptado"
+        }
+      ]
     }
   ]
+
 }

@@ -42,7 +42,7 @@ export default function SignUp() {
   };
   const NewUser = (nombre,apellido, email, password, rol) => {
     const user=({ "mail": email, "password": password, "name": nombre + " " + apellido, "role":rol});
-    mock.loginUsers.unshift(user)
+    mock.usuarios.unshift(user)
   };
   return (
     <div className="App m-5border border-dark rounded p-5">

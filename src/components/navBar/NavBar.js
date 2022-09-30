@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { UserContext } from "../../contexts/UserContext";
+import { useUserContext } from "../../contexts/UserContext";
 
 const NavBar = () => {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = useUserContext();
   const navigate = useNavigate();
   const logOut = () => {
     setUser(null);
     navigate("/");
   };
-  return (
+
+  return (    
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <button
@@ -29,7 +30,7 @@ const NavBar = () => {
               <Link
                 className="nav-link active"
                 aria-current="page"
-                to="../clases"
+                to="../home"
               >
                 Clases
               </Link>
@@ -41,7 +42,7 @@ const NavBar = () => {
                     <Link
                       className="nav-link active"
                       aria-current="page"
-                      to="categorias"
+                      to="../mis-clases"
                     >
                       Mis Clases
                     </Link>
@@ -50,12 +51,12 @@ const NavBar = () => {
               ) : (
                 <>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">
+                  <Link className="nav-link active" aria-current="page" to="../Inscribirse">
                     Inscribirse
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">
+                  <Link className="nav-link active" aria-current="page" to="../mis-clases">
                     Mis Clases
                   </Link>
                 </li>
