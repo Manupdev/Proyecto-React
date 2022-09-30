@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import Title from "../title/Title";
+import NavBar from "../../components/navBar/NavBar"
 import {UserContext} from "../../contexts/UserContext";
 import {useNavigate} from "react-router-dom";
 import "./Header.css";
@@ -11,8 +11,10 @@ export default function Header() {
         setUser(null);
         navigate("/");
     }
-    return (<header className="header">
-            <Title name={user?.name || "Invitado"}/>
+    return (
+        <header className="header">
+        
+            <NavBar/>
             {user && <button onClick={logOut}>Cerrar sesión</button>}
         </header>
     );

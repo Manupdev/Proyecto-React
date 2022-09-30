@@ -2,13 +2,25 @@
   "loginUsers": [
     {
       "mail": "profe@mail.com",
+      "password": "123",
       "name": "Profesor 1",
-      "role": "TEACHER"
+      "role": "Profesor",
+      "telefono": "1231231231",
+      "informacion": {
+        "titulo": "Licenciado en turismo",
+        "experiencia": "2 años como profesor"
+      }
     },
     {
       "mail": "ana@mail.com",
+      "password": "ana",
       "name": "Alumno 1",
-      "role": "STUDENT"
+      "role": "Alumno",
+      "telefono": "1231231231",
+      "informacion": {
+        "dateNac": "12/02/1999",
+        "estudios": "universitarios en curso"
+      }
     }
   ],
   "users": [
@@ -43,6 +55,41 @@
       "id": 3,
       "name": "Estudiante Pepe Doe",
       "position": "Estudiante "
+    }
+  ],
+  "clases": [
+    {
+      "idClase":1,
+      "profesor": "Profesor 1",
+      "nombreMateria": "Matematica",
+      "duracion": "30 clases",
+      "frecuencia": "martes - jueves",
+      "costo": 30000,
+      "calificacion": 0,
+      "comentarios": [
+        {
+          "id": 1,
+          "alumno": "alumno 1",
+          "comentario": "lalalala",
+          "estado": "aceptado"
+        },
+        {
+          "id":2,
+          "alumno": "alumno 2",
+          "comentario": "lalalala",
+          "estado": "pendiente"
+        }
+      ],
+      "alumnos": [
+        {
+          "alumno": "alumno 1",
+          "telefono": "111111",
+          "mail": "maildelalumno@a.com",
+          "mensaje": "Mensaje",
+          "horario": "15hs",
+          "estado": "pendiente"
+        }
+      ]
     }
   ]
 }
