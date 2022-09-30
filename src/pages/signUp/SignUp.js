@@ -45,11 +45,10 @@ export default function SignUp() {
     mock.usuarios.unshift(user)
   };
   return (
-    <div className="App m-5border border-dark rounded p-5">
+    <div className="App m-5border border-dark rounded p-5 mx-auto w-50">
       <form id="formulario">
         <h3>Sign Up</h3>
-        <div className="mb-3">
-          <label>Nombre</label>
+        <div className="mb-3 text-start">
           <input
             type="text"
             className="form-control"
@@ -66,7 +65,6 @@ export default function SignUp() {
           />
         </div>
         <div className="mb-3">
-          <label>Apellido</label>
           <input
             type="text"
             className="form-control"
@@ -83,7 +81,6 @@ export default function SignUp() {
           />
         </div>
         <div className="mb-3">
-          <label>Email </label>
           <input
             type="email"
             className="form-control"
@@ -100,7 +97,6 @@ export default function SignUp() {
           />
         </div>
         <div className="mb-3">
-          <label>Password</label>
           <input
             type="password"
             className="form-control"
@@ -113,11 +109,10 @@ export default function SignUp() {
           />
         </div>
         <div className="mb-3">
-          <label>Confirme su contraseña</label>
           <input
             type="password"
             className="form-control"
-            placeholder="Password"
+            placeholder="Confirm Password"
             id="passwordConfirm"
             required
           />

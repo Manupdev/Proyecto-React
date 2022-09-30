@@ -5,14 +5,13 @@ import {
   createRoutesFromElements,
   createBrowserRouter,
   RouterProvider,
-  Outlet,
 } from "react-router-dom";
 import LoginPage from "./pages/login/LoginPage";
 import Home from "./pages/home/home";
 import Root from "./components/root/Root";
 import SignUp from "./pages/signUp/SignUp";
 import MisClases from "./pages/mis_clases/mis_clases";
-import Inscripciones from "./pages/signUp/SignUp";
+import Inscripcion from "./pages/inscripciones/inscripciones";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +21,7 @@ const router = createBrowserRouter(
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
         <Route path="/mis-clases" element={<MisClases />} />
-        <Route path="/inscripciones" element={<Inscripciones />} />
+        <Route path="/Inscribirse" element={<Inscripcion />} />
       </Route>
     </>
   )
@@ -33,10 +32,6 @@ function App() {
     <UserContextProvider>
       <div className="App">
             <RouterProvider router={router} />
-        <main>
-          <Outlet>
-          </Outlet>
-        </main>
       </div>
     </UserContextProvider>
   );

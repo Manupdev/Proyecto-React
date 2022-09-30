@@ -128,7 +128,6 @@ export default function CardClaseFilter({
 
   if (user.role === "Alumno" && _alumnos.find((al) => al.id == user.id)) {
     const alumnoActivo = _alumnos.find((al) => al.id == user.id);
-    /**{alumnoActivo.estado==="Aceptado"}?({<button enabled id={"boton"+alumnoActivo.id+id} className="btn btn-danger">Modificar</button>}):({<button disabled id={"boton"+alumnoActivo.id+id} className="btn btn-danger">Modificar</button>}); */
     if (alumnoActivo.id == user.id) {
       return (
         <div key={id} className="card w-50">

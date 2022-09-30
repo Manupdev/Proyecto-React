@@ -11,7 +11,7 @@ export default function LoginPage() {
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     
-    return <div className="App m-5 border border-dark rounded p-5">
+    return <div className="App m-5 border border-dark rounded p-5 w-50 mx-auto">
         <form className='m-8'>
         <div className="mb-3">
           <label>Email address</label>          

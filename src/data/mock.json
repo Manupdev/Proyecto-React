@@ -84,7 +84,7 @@
       "profesor": 2,
       "nombreMateria": "Geografia",
       "duracion": "20 clases",
-      "frecuencia": "martes - jueves",
+      "frecuencia": "jueves",
       "costo": 30000,
       "calificacion": 0,
       "comentarios": [
@@ -116,9 +116,9 @@
     {
       "id": 566,
       "profesor": 1,
-      "nombreMateria": "Introduccion a Hoteleria",
+      "nombreMateria": "Hoteleria",
       "duracion": "30 clases",
-      "frecuencia": "lunes - jueves",
+      "frecuencia": "lunes ",
       "costo": 20000,
       "calificacion": 0,
       "comentarios": [
@@ -186,7 +186,7 @@
       "profesor": 3,
       "nombreMateria": "Matematica",
       "duracion": "60 clases",
-      "frecuencia": "miercoles - jueves",
+      "frecuencia": "miercoles ",
       "costo": 60000,
       "calificacion": 0,
       "comentarios": [
